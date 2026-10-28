@@ -1,458 +1,270 @@
-\# 🎮 ORB ESCAPE | 3D Sliding Puzzle Game
+# 🎮 ORB ESCAPE — 3D Sliding Puzzle Game
 
+**Think strategically. Move precisely. Find the optimal escape.**
 
+ORB ESCAPE is an interactive sliding-block puzzle game that challenges players to guide a glowing blue orb toward an exit by strategically moving obstacles across a 3D-style puzzle board.
 
-\*\*A 3D puzzle game combining algorithmic problem-solving, interactive gameplay, and real-time feedback.\*\*
+The project combines **Python-based puzzle-solving logic, algorithmic search, interactive browser gameplay, intelligent hints, and performance-based scoring**.
 
+## 🚀 Key Features
 
+- 🧩 **Algorithmic Puzzle Solving** — Explore puzzle states and search for solutions.
+- 🧠 **Optimal Move Analysis** — Calculate minimum-move solutions for supported puzzles.
+- 💡 **Intelligent Hints** — Get guidance on the next move.
+- 🎮 **Interactive Gameplay** — Move blocks along their permitted paths.
+- 🗺️ **Multiple Levels** — Solve puzzles with different layouts and difficulties.
+- ↩️ **Undo & Restart** — Recover from mistakes and try different strategies.
+- ⏱️ **Game-State Tracking** — Track moves, time, and level progress.
+- 📊 **Dynamic Scoring** — Evaluate performance based on gameplay.
+- ⭐ **Star Ratings** — Measure puzzle-solving performance.
+- 🏆 **Leaderboard** — Compare recorded scores, where supported.
+- ✨ **Visual Effects** — Enjoy glowing elements and an animated orb escape sequence.
 
-ORB ESCAPE challenges players to navigate a glowing blue orb through a sliding-block puzzle. Players must move blocks along predefined grooves, plan their moves strategically, and reach the exit before exhausting the move limit.
+## 🎯 Game Objective
 
+**Guide the glowing blue orb to the EXIT gate without exceeding the move limit.**
 
+### How to Play
 
-The project combines Python-based puzzle-solving logic with an interactive browser-based gaming experience.
+1. Select a puzzle level.
+2. Examine the board and identify obstacles.
+3. Move blocks along their permitted paths.
+4. Plan your moves to create a route to the exit.
+5. Use hints when necessary.
+6. Reach the exit within the move limit.
+7. Improve your score by solving puzzles efficiently.
 
+## 🛠️ Technology Stack
 
-
-\---
-
-
-
-\## 🚀 Project Highlights
-
-
-
-\- 🧩 \*\*Algorithmic Puzzle Solving:\*\* Puzzle layouts are generated and validated using computer search.
-
-\- 🧠 \*\*Optimal Solution Analysis:\*\* A Python solver determines the minimum number of moves required to solve each level.
-
-\- 💡 \*\*Intelligent Hints:\*\* The server provides the best next move to help players progress.
-
-\- 🎮 \*\*Interactive 3D Gameplay:\*\* Slide blocks along their grooves on a tilted puzzle board.
-
-\- 📊 \*\*Dynamic Scoring:\*\* Scores reflect the level, remaining moves, and hints used.
-
-\- ⭐ \*\*Performance Evaluation:\*\* Earn up to three stars based on your gameplay performance.
-
-\- ⏱️ \*\*Game State Management:\*\* Track moves, elapsed time, and progress through each level.
-
-\- ↩️ \*\*Undo and Restart:\*\* Experiment with different strategies and recover from mistakes.
-
-\- 🏆 \*\*Leaderboard:\*\* Save scores and compare gameplay performance.
-
-\- ✨ \*\*Visual Effects:\*\* Animated creatures, glowing fireflies, a reactive owl, and an orb escape animation.
-
-
-
-\---
-
-
-
-\## 🛠️ Tech Stack
-
-
-
-| Technology | Application |
-
+| Technology | Purpose |
 |---|---|
-
-| Python | Game server and puzzle-solving logic |
-
-| HTML | Browser-based game structure |
-
-| CSS | Game interface and visual styling |
-
+| Python | Server-side functionality and puzzle-solving logic |
 | JavaScript | Interactive gameplay and user controls |
+| HTML5 | Browser-based game structure |
+| CSS3 | Interface styling and visual effects |
+| Git | Version control |
+| GitHub | Source-code hosting and documentation |
 
-| 3D Graphics | Visualization of the board and sliding blocks |
+*Verify the actual implementation before claiming specific graphics engines, frameworks, or libraries.*
 
-| Git \& GitHub | Version control and project management |
+## 🧠 Technical Implementation
 
+### 1. Puzzle-Solving Logic
 
+The Python-side puzzle solver explores possible puzzle states to identify solutions.
 
-\*Note: Verify the exact 3D graphics library and server implementation in your source code before publishing this list.\*
+Relevant concepts include:
 
+- State representation
+- Valid-move generation
+- Search-based problem-solving
+- Goal-state detection
+- Minimum-move solution analysis
 
+### 2. Hint Generation
 
-\---
+The hint functionality uses puzzle-solving logic to recommend a move that helps the player progress toward a solution.
 
+### 3. Puzzle Validation
 
+Puzzle validation helps determine whether a puzzle configuration is solvable and whether the solver can find a valid solution.
 
-\## 🧠 Technical Skills Demonstrated
+### 4. Game-State Management
 
+The game tracks relevant gameplay information, such as moves, level progress, hint usage, and scoring.
 
+### 5. Frontend and Backend Integration
 
-\### 1. Data Structures and Algorithms
+The browser interface provides the player controls and visual feedback, while the Python side handles supported server-side operations and puzzle logic.
 
-\- Search-based puzzle generation and validation
+*The exact implementation details should be confirmed against the source code.*
 
-\- Minimum-move solution calculation
-
-\- State exploration and move evaluation
-
-\- Constraint-based puzzle solving
-
-
-
-\### 2. Python Programming
-
-\- Server-side game logic
-
-\- Solver and hint functionality
-
-\- Game-state validation
-
-\- Integration between the game interface and backend
-
-
-
-\### 3. JavaScript and Interactive Development
-
-\- Handling player interactions
-
-\- Dragging and moving puzzle blocks
-
-\- Updating gameplay information
-
-\- Managing user actions and game feedback
-
-
-
-\### 4. Game Logic and Optimization
-
-\- Move-limit enforcement
-
-\- Optimal solution analysis
-
-\- Score calculation
-
-\- Hint penalties and performance-based rewards
-
-
-
-\### 5. Software Development
-
-\- Frontend and backend integration
-
-\- Testing puzzle solvability
-
-\- Debugging and verification
-
-\- Organizing a multi-file project
-
-
-
-\---
-
-
-
-\## 🎯 Gameplay
-
-
-
-The objective is simple: \*\*get the glowing blue orb to the green EXIT gate within the move limit.\*\*
-
-
-
-1\. Select a level.
-
-2\. Drag blocks along their designated grooves.
-
-3\. Plan your moves to clear a path toward the exit.
-
-4\. Use hints when you need help.
-
-5\. Reach the exit without exceeding the move limit.
-
-6\. Earn stars and improve your score.
-
-
-
-When the orb reaches the exit, the glass block fades away and the orb rises with sparkling visual effects.
-
-
-
-\---
-
-
-
-\## 🗺️ Available Levels
-
-
+## 🗺️ Puzzle Levels
 
 | Level | Name | Blocks | Optimal Moves | Move Limit |
-
 |---|---|---:|---:|---:|
-
 | 1 | Garden Gate | 7 | 9 | 17 |
-
 | 2 | Crystal Maze | 13 | 18 | 31 |
-
 | 3 | Midnight Vault | 10 | 19 | 32 |
 
+*Verify these values against the actual puzzle definitions and solver output.*
 
-
-\*\*Optimal moves\*\* represent the minimum number of moves found by the puzzle solver. The move limit gives players additional room to explore alternative solutions.
-
-
-
-\---
-
-
-
-\## 🎮 Game Controls
-
-
+## 🎮 Game Controls
 
 | Control | Function |
-
 |---|---|
-
-| Drag | Move blocks along their grooves |
-
+| Drag | Move blocks along their permitted paths |
 | Undo | Reverse the previous move |
+| Hint 💡 | Request a recommended next move |
+| Restart | Reset the current puzzle |
+| Pause | Pause gameplay, if supported |
+| Level Selector | Select another puzzle, if supported |
 
-| Hint 💡 | Display the best next move |
+## 📊 Scoring System
 
-| Restart | Reset the current level |
+The documented scoring formula is:
 
-| Pause ⏸️ | Pause gameplay |
+**Score = (200 × Level) + (40 × Spare Moves) − (60 × Hints Used)**
 
-| Level Selector | Switch between puzzles |
+- Higher levels provide a larger base score.
+- Remaining moves contribute bonus points.
+- Using hints reduces the score.
 
+*Confirm the formula against the actual scoring implementation before publishing it as a verified game rule.*
 
-
-\---
-
-
-
-\## 📈 Scoring System
-
-
-
-The game uses the following scoring formula:
-
-
-
-\*\*Score = (200 × Level) + (40 × Spare Moves) − (60 × Hints Used)\*\*
-
-
-
-\- Higher levels provide a larger base score.
-
-\- Spare moves contribute bonus points.
-
-\- Using hints reduces the score.
-
-\- Stars provide an additional measure of performance.
-
-
-
-The exact scoring and star-awarding rules depend on the game's implementation.
-
-
-
-\---
-
-
-
-\## ⚙️ Installation and Setup
-
-
-
-\### Prerequisites
-
-\- Python installed on your system
-
-\- A modern web browser
-
-\- Git (optional, for cloning the repository)
-
-
-
-\### Run Locally
-
-
-
-\*\*1. Clone the repository\*\*
-
-
-
-```bash
-
-git clone https://github.com/bhanusri-manukonda/ORB-ESCAPE---3D-Game-.git
-
-```
-
-
-
-\*\*2. Navigate to the project folder\*\*
-
-
-
-```bash
-
-cd orb-escape-3d
-
-```
-
-
-
-If the game files are inside a nested `orb-escape` directory, navigate into that directory.
-
-
-
-\*\*3. Start the server\*\*
-
-
-
-Windows:
-
-
-
-```powershell
-
-python server.py
-
-```
-
-
-
-macOS/Linux:
-
-
-
-```bash
-
-python3 server.py
-
-```
-
-
-
-\*\*4. Open the game\*\*
-
-
-
-Visit:
-
-
+## 🏗️ Project Architecture
 
 ```text
-
-http://localhost:8000
-
+                 PLAYER
+                   |
+                   v
+          BROWSER GAME INTERFACE
+                   |
+                   v
+              GAME STATE
+                   |
+                   v
+              PYTHON SERVER
+                   |
+                   v
+              PUZZLE LOGIC
+                   |
+             +-----+-----+
+             |           |
+             v           v
+           SOLVER     VALIDATION
+             |
+             v
+       HINT / SOLUTION
+             |
+             v
+         GAME FEEDBACK
 ```
 
+This diagram illustrates the conceptual architecture. Verify the actual communication flow against the implementation.
 
+## 📂 Project Structure
 
-Follow any additional setup instructions if the project requires dependencies.
+```text
+ORB-ESCAPE/
+│
+├── server.py
+├── puzzles.py
+├── README.md
+│
+└── static/
+    ├── game.js
+    ├── style.css
+    └── index.html
+```
 
+*Adjust the structure above to match the actual repository files.*
 
+## ⚙️ Installation and Setup
 
-\---
+### Prerequisites
 
+- Python 3
+- A modern web browser
+- Git (optional)
 
+### 1. Clone the Repository
 
-\## 🧪 Testing and Validation
+```bash
+git clone https://github.com/bhanusri-manukonda/ORB-ESCAPE---3D-Game-.git
+```
 
+### 2. Open the Project Directory
 
+```bash
+cd ORB-ESCAPE---3D-Game-
+```
 
-The Python-side verification performed for this project includes:
+If the project is inside a nested directory, navigate to the directory containing `server.py`.
 
+### 3. Start the Server
 
+**Windows:**
 
-\- Checking puzzle solvability
+```powershell
+python server.py
+```
 
-\- Verifying minimum-move solutions
+**macOS/Linux:**
 
-\- Testing hint generation
+```bash
+python3 server.py
+```
 
-\- Running solver verification
+### 4. Open the Game
 
+Open the local address printed by the server in your browser.
 
+For example, if the server uses port 8000:
 
-\*\*Current testing status:\*\* The Python-side checks have been performed. Browser gameplay, 3D rendering, and drag interactions still need to be tested.
+```text
+http://localhost:8000
+```
 
+*The actual port and dependencies depend on the server implementation.*
 
+## 🧪 Testing and Validation
 
-\---
+The project notes report that Python-side checks have been performed for:
 
+- Puzzle solvability
+- Minimum-move solution verification
+- Hint generation
+- Solver verification
 
+### Verification Status
 
-\## 💡 Challenges Addressed
+| Component | Status |
+|---|---|
+| Python-side solver checks | Reported as performed |
+| Solution verification | Reported as performed |
+| Hint generation | Reported as checked |
+| Browser gameplay | Requires manual verification |
+| 3D rendering | Requires manual verification |
+| Drag interactions | Requires manual verification |
 
+These statuses reflect the available project notes, not an independent test run.
 
+## 💡 Challenges Explored
 
-\- Representing sliding-block puzzles in a form suitable for algorithmic search
+- Representing puzzle configurations as searchable states.
+- Exploring valid moves under puzzle constraints.
+- Finding solutions across possible board configurations.
+- Connecting solver results to an interactive hint system.
+- Managing move limits and gameplay progress.
+- Integrating puzzle logic with browser interactions.
+- Providing useful feedback during gameplay.
 
-\- Finding optimal solutions for different puzzle layouts
+## 🔮 Future Improvements
 
-\- Connecting server-side hints to interactive gameplay
+- [ ] Add more challenging puzzle levels.
+- [ ] Document the solver algorithm and its complexity.
+- [ ] Add automated tests for invalid moves and edge cases.
+- [ ] Improve mouse and touch-based interactions.
+- [ ] Optimize the interface for mobile devices.
+- [ ] Expand leaderboard functionality.
+- [ ] Add reproducible solver performance benchmarks.
+- [ ] Deploy a playable online version.
+- [ ] Add gameplay screenshots and a demonstration GIF.
 
-\- Balancing move limits with puzzle difficulty
+## 👩‍💻 Developer
 
-\- Combining game mechanics, scoring, and visual feedback in one application
+**Bhanusri Manukonda**
 
+Computer Science and Engineering  
+Aspiring Software Developer
 
+**Technical Skills:** Python • JavaScript • HTML • CSS • Data Structures and Algorithms • Problem-Solving • Git • GitHub
 
-\---
+**GitHub:** https://github.com/bhanusri-manukonda
 
+## ⭐ Support
 
+If you find ORB ESCAPE interesting, consider starring the repository!
 
-\## 🔮 Future Improvements
-
-
-
-\- Add more challenging puzzle levels
-
-\- Improve mouse and touch-based dragging
-
-\- Add responsive layouts for mobile devices
-
-\- Expand the leaderboard
-
-\- Add additional puzzle-generation algorithms
-
-\- Introduce difficulty-based level recommendations
-
-
-
-\---
-
-
-
-\## 👩‍💻 Developer
-
-
-
-\*\*Bhanusri Manukonda\*\*
-
-
-
-Computer Science and Engineering | Aspiring Software Developer
-
-
-
-\### Core Skills
-
-
-
-Python • JavaScript • HTML • CSS • Data Structures \& Algorithms • Problem-Solving • Git • GitHub
-
-
-
-\---
-
-
-
-\## ⭐ Support
-
-
-
-If you find this project interesting, consider starring the repository!
-
-
-
-\*\*ORB ESCAPE — Think strategically. Slide precisely. Escape successfully.\*\*
-
+**ORB ESCAPE — Think strategically. Slide precisely. Escape successfully.**
